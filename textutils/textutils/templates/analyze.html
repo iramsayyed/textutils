@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>textutils.com</title>
+      <style>
+      li :hover {
+            color: #DA70D6 !important;
+        }
+      body{
+        background-color: #DCE0DF;
+        color: black;
+      }
+      button{
+           background-color: #DA70D6 !important;
+           color:white !important;
+        }
+      span {
+            color: #DA70D6;
+
+        }
+      #flexSwitchCheckDefault1{
+           background-color: #DA70D6 !important;
+        }
+      #flexSwitchCheckDefault2{
+           background-color: #DA70D6 !important;
+        }
+      #flexSwitchCheckDefault3{
+           background-color: #DA70D6 !important;
+        }
+      #flexSwitchCheckDefault4{
+           background-color: #DA70D6 !important;
+        }
+      #flexSwitchCheckDefault5{
+           background-color: #DA70D6 !important;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">PORT<span>FOLIO</span></a> -->
+          <a class="navbar-brand" href="/" style="color: white;">Text<span>Utils</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">About</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="s">
+        <button type="button" class="btn btn-danger">Search</button>
+      </form>
+      </nav>
+  <br>
+
+  <div class="container">
+    <form action="/analyze" method="get">
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Succcess!!</strong>Your text has been analyzed yoo :-)
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+
+
+  <div class="container">
+    <h1>Your Analyzed Text - {{ purpose }}</h1>
+<p>
+    {{count}}
+    {{ analyzed_text }}
+</p>
+
+
+
+  </div>
